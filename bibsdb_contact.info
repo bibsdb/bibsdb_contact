@@ -1,0 +1,12 @@
+name = Bibsdb Contact
+core = 7.x
+package = Bibsdb
+dependencies[] = ctools
+dependencies[] = ctools_custom_content
+features[ctools][] = ctools_custom_content:ctools_content:1
+features[ctools_custom_content][] = bibsdb_contact_form_text
+features[features_api][] = api:2
+features[features_overrides][] = fe_block_settings.formblock-contact_site.themes|bibsdb
+features[features_overrides][] = page_manager_handlers.contact_site_panel_context.conf|display|content|new-ff3120ab-167f-465a-af7e-52910388bc4f
+features[features_overrides][] = page_manager_handlers.contact_site_panel_context.conf|display|panels|main_content|1
+project path = sites/default/modules
